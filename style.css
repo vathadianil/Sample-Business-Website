@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',Arial,sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.contact-details {
+    display: flex;
+    background-color: #007bff;
+    padding: 0px 200px;
+    justify-content: space-between;
+}
+
+.contact-text {
+    display: flex;
+}
+
+.contact-text a, .contact-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-text p {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.contact-icons a {
+    padding-right: 20px;
+}
+
+/* Image Section */
+
+.image-container {
+    width:  100vw;
+    height: 90vh;
+    background: url(./images/background.jpg), linear-gradient(grey,white);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.company-name {
+    display: flex;
+}
+
+.company-name .cleaning a {
+    text-decoration: none;
+    color: rgba(255,255,255, 1) ;
+}
+
+.company-name .company a {
+    text-decoration: none;
+    color: #ffc107;
+}
+
+.cleaning a:hover {
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, .4);
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: rgba(255,255,255, 1);
+    padding-right: 10px;
+}
+
+.navbar-links a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 20px;
+}
+
+.company-description-container {
+    padding: 150px 0px 0px 150px;
+}
+
+.company-description-container p, h1 {
+    color: rgba(255,255,255, 1);
+    padding-bottom: 15px;
+    animation: fade 2s ease-in-out forwards;
+}
+
+@keyframes fade {
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.company-description-container a{
+    text-decoration: none;
+    color: rgba(255,255,255, 1);
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 4px 20px;
+    
+}
+
+.company-description-container a:hover {
+    transition: 1s ease-in-out;
+    color: #007bff;
+    background: transparent;
+}
